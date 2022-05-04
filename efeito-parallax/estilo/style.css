@@ -1,0 +1,120 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+
+
+@import url('https://fonts.googleapis.com/css2?family=Concert+One&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap');
+
+
+:root {
+    --fonte1: Verdana, Geneva, Tahoma, sans-serif;
+    --fonte2: 'Oswald', sans-serif;
+    --fonte3: 'Concert One', cursive;
+    --fonte4: 'Rock Salt', cursive;
+}
+
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+html, body {
+    min-height: 100vh;
+    background-color: darkgray;
+    font-family: var(--fonte1);
+}
+
+header {
+    background-image: url('../imagens/background000.jpg');
+    background-position: center bottom;
+    background-size: cover;
+}
+
+header {
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+header > h1 {
+    /*
+    text-transform: uppercase;    - todas as letras ficam maiúsculas
+    font-variant: small-caps;     - todas as letras ficam maiúsculas, mas a 1ª fica maior  
+    */
+    padding-top: 15px;
+    font-variant: small-caps;
+    font-family: var(--fonte2);
+    font-size: 15vw;
+}
+
+header > p {
+    padding-bottom: 15px;
+    font-family: var(--fonte3);
+    font-size: 1em;
+}
+
+header a, footer a {
+    color: white;
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+header a:hover, footer a:hover {
+    text-decoration: underline;
+}
+
+main > section {
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 2em;       /* espaçamento entre linhas */
+    padding-left: 30px;
+    font-family: var(--fonte4);
+    font-size: 4vw;
+}
+
+main > section > p {
+    padding-bottom: 2em;
+}
+
+main > section.normal {
+    background-color: white;
+    color: black;
+}
+
+main > section.imagem {
+    background-color: rgb(115, 114, 114);
+    color: white;
+    box-shadow: inset 6px 6px 13px rgba(0, 0, 0, 0.473);
+    background-attachment: fixed;
+}
+
+main > section.imagem > p {
+    display: inline-block;
+    padding: 6px;
+    background-color: rgba(0, 0, 0, 0.11);
+    text-shadow: 1.6px 1px 0px black;
+}
+
+main > section#img01 {
+    background-image: url('../imagens/emoji-coracao.jpg');
+    background-position: right center;
+    background-size: cover;
+}
+
+main > section#img02 {
+    background-image: url('../imagens/background02.jpg');
+    background-position: right center;
+    background-size: cover;
+}
+
+footer {
+    background-color:  black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+
+}
+
